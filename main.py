@@ -846,10 +846,10 @@ emphasize of the speech is identify by the caps of the word, the !!! the ??? the
             
             for i, marker in enumerate(presentation_markers):
                 # Main segment: from after current marker to before next marker (or end of file)
-                start_time = marker['end'] + 0.5  # Add small buffer after marker
+                start_time = marker['end'] + 0.1  # Add small buffer after marker (reduced from 0.5)
                 
                 if i + 1 < len(presentation_markers):
-                    end_time = presentation_markers[i + 1]['start'] - 0.5  # Buffer before next marker
+                    end_time = presentation_markers[i + 1]['start'] - 0.1  # Buffer before next marker (reduced from 0.5)
                 else:
                     # Last segment - use end of audio
                     end_time = words[-1].end if words else start_time + 30  
