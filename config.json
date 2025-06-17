@@ -1,0 +1,9 @@
+{
+    "default_pdf_path": "/Users/twang/Downloads/Week 1 - Summary copy pages 1 - 4.pdf",
+    "default_output_folder": "./output",
+    "pdf_batch_size": 5,
+    "tts_batch_size": 5,
+    "use_batch_splitting": true,
+    "video_fps": 24,
+    "audio_rate": 24000
+}
